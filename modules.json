@@ -1,0 +1,20 @@
+[
+{
+  "model": "modules.module",
+  "pk": 1,
+  "fields": {
+    "title": "Модуль 1",
+    "description": "Описание модуля 1",
+    "owner": 1
+  }
+},
+{
+  "model": "modules.module",
+  "pk": 2,
+  "fields": {
+    "title": "Модуль 2",
+    "description": "Описание модуля 2",
+    "owner": 1
+  }
+}
+]
