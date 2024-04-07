@@ -32,7 +32,7 @@ class ModuleListAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        queryset = queryset.filter(user=self.request.user)
+        queryset = queryset.filter(owner=self.request.user)
         return queryset
 
 
@@ -87,7 +87,7 @@ class LessonListAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        queryset = queryset.filter(user=self.request.user)
+        queryset = queryset.filter(owner=self.request.user)
         return queryset
 
 
