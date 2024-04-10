@@ -3,8 +3,8 @@ import unittest
 from django.test import TestCase
 from rest_framework import status
 
-from users.models import User
-from users.serializers import UsersSerializer
+from .models import User
+from .serializers import UsersSerializer
 
 
 class UserAPITestCase(TestCase):

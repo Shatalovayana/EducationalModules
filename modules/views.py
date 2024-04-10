@@ -1,10 +1,10 @@
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 
-from modules.models import Module, Lesson
-from modules.paginators import ModulePaginator, LessonPaginator
-from modules.permissions import IsOwner
-from modules.serializers import ModuleSerializer, LessonSerializer
+from .models import Module, Lesson
+from .paginators import ModulePaginator, LessonPaginator
+from .permissions import IsOwner
+from .serializers import ModuleSerializer, LessonSerializer
 
 
 class ModuleCreateAPIView(generics.CreateAPIView):
