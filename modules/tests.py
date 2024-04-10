@@ -1,12 +1,9 @@
 import unittest
-from unittest import TestCase
 
 from django.urls import reverse
-from rest_framework.request import Request
 
-from modules.models import Module, Lesson
-from modules.permissions import IsSuperUser, IsOwner
-from modules.serializers import ModuleSerializer, LessonSerializer
+from .models import Module, Lesson
+from .serializers import ModuleSerializer, LessonSerializer
 from users.models import User
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -206,4 +203,3 @@ class LessonSerializerTestCase(unittest.TestCase):
         self.assertEqual(serializer.Meta.model, Lesson)
         self.assertEqual(serializer.Meta.fields, ('pk', 'title', 'body', 'video_url', 'module', 'owner'))
         self.assertEqual(serializer.Meta.read_only_fields, ('owner',))
-

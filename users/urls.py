@@ -1,8 +1,8 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 
-from users.apps import UsersConfig
-from users.views import UsersViewSet
+from .apps import UsersConfig
+from .views import UsersViewSet
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
